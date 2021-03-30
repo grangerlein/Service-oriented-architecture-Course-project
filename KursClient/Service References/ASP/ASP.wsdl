@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Get_Table">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Name_Table" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_TableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_TableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Tovar_by_Cat_id">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="category_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Tovar_by_Cat_idResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Tovar_by_Cat_idResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Workers">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_WorkersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_WorkersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Rashod_1part">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TTN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Rashod_1partResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Otchet_Rashod_1partResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Rashod_2part">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TTN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Rashod_2partResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Otchet_Rashod_2partResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Prihod_1part">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TTN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Prihod_1partResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Otchet_Prihod_1partResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Prihod_2part">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TTN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Otchet_Prihod_2partResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Otchet_Prihod_2partResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get_TableSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Table" />
+  </wsdl:message>
+  <wsdl:message name="Get_TableSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_TableResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Tovar_by_Cat_idSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Tovar_by_Cat_id" />
+  </wsdl:message>
+  <wsdl:message name="Get_Tovar_by_Cat_idSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Tovar_by_Cat_idResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_WorkersSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Workers" />
+  </wsdl:message>
+  <wsdl:message name="Get_WorkersSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_WorkersResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Rashod_1partSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Rashod_1part" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Rashod_1partSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Rashod_1partResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Rashod_2partSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Rashod_2part" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Rashod_2partSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Rashod_2partResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Prihod_1partSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Prihod_1part" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Prihod_1partSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Prihod_1partResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Prihod_2partSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Prihod_2part" />
+  </wsdl:message>
+  <wsdl:message name="Get_Otchet_Prihod_2partSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Otchet_Prihod_2partResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ASPSoap">
+    <wsdl:operation name="Get_Table">
+      <wsdl:input message="tns:Get_TableSoapIn" />
+      <wsdl:output message="tns:Get_TableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Tovar_by_Cat_id">
+      <wsdl:input message="tns:Get_Tovar_by_Cat_idSoapIn" />
+      <wsdl:output message="tns:Get_Tovar_by_Cat_idSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Workers">
+      <wsdl:input message="tns:Get_WorkersSoapIn" />
+      <wsdl:output message="tns:Get_WorkersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Rashod_1part">
+      <wsdl:input message="tns:Get_Otchet_Rashod_1partSoapIn" />
+      <wsdl:output message="tns:Get_Otchet_Rashod_1partSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Rashod_2part">
+      <wsdl:input message="tns:Get_Otchet_Rashod_2partSoapIn" />
+      <wsdl:output message="tns:Get_Otchet_Rashod_2partSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Prihod_1part">
+      <wsdl:input message="tns:Get_Otchet_Prihod_1partSoapIn" />
+      <wsdl:output message="tns:Get_Otchet_Prihod_1partSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Prihod_2part">
+      <wsdl:input message="tns:Get_Otchet_Prihod_2partSoapIn" />
+      <wsdl:output message="tns:Get_Otchet_Prihod_2partSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ASPSoap" type="tns:ASPSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Table">
+      <soap:operation soapAction="http://tempuri.org/Get_Table" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Tovar_by_Cat_id">
+      <soap:operation soapAction="http://tempuri.org/Get_Tovar_by_Cat_id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Workers">
+      <soap:operation soapAction="http://tempuri.org/Get_Workers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Rashod_1part">
+      <soap:operation soapAction="http://tempuri.org/Get_Otchet_Rashod_1part" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Rashod_2part">
+      <soap:operation soapAction="http://tempuri.org/Get_Otchet_Rashod_2part" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Prihod_1part">
+      <soap:operation soapAction="http://tempuri.org/Get_Otchet_Prihod_1part" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Prihod_2part">
+      <soap:operation soapAction="http://tempuri.org/Get_Otchet_Prihod_2part" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ASPSoap12" type="tns:ASPSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Table">
+      <soap12:operation soapAction="http://tempuri.org/Get_Table" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Tovar_by_Cat_id">
+      <soap12:operation soapAction="http://tempuri.org/Get_Tovar_by_Cat_id" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Workers">
+      <soap12:operation soapAction="http://tempuri.org/Get_Workers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Rashod_1part">
+      <soap12:operation soapAction="http://tempuri.org/Get_Otchet_Rashod_1part" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Rashod_2part">
+      <soap12:operation soapAction="http://tempuri.org/Get_Otchet_Rashod_2part" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Prihod_1part">
+      <soap12:operation soapAction="http://tempuri.org/Get_Otchet_Prihod_1part" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Otchet_Prihod_2part">
+      <soap12:operation soapAction="http://tempuri.org/Get_Otchet_Prihod_2part" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ASP">
+    <wsdl:port name="ASPSoap" binding="tns:ASPSoap">
+      <soap:address location="http://localhost:8082/ASP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ASPSoap12" binding="tns:ASPSoap12">
+      <soap12:address location="http://localhost:8082/ASP.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
